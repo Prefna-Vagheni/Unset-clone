@@ -1,0 +1,49 @@
+/* 
+FONT SIZE SYSTEM(px)
+10 / 12/ 14 / 16 / 18 /20 / 24/ 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
+
+Font weight
+Default: 400
+
+Line Height
+Default: 1
+
+
+SPACING SYSTEM(px)
+2 / 4 / 8 / 12 / 16 / 24 /32 / 48 / 64 / 80 / 96 / 128
+
+-Colors
+Primary: 
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VARIABLES */
+:root {
+  --dark-green: #fafdfe;
+  --light-green: #091c22;
+  --dark-green-85: rgba(250, 253, 254, 0.85);
+  --light-green-85: rgba(9, 28, 34, 0.85);
+  --dark-green-3: rgba(250, 253, 254, 0.03);
+  --light-green-3: rgba(9, 28, 34, 0.03);
+  --dark-green-25: rgba(250, 253, 254, 0.25);
+  --light-green-25: rgba(9, 28, 34, 0.25);
+  --strokes: #213338;
+}
+
+/* PRESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--dark-green);
+}
