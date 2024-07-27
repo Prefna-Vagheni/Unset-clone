@@ -66,13 +66,24 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 7px;
+  border-radius: 20px;
+}
+.bullet {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 0.8rem;
 }
 input,
 button,
 textarea {
   font: inherit;
   color: inherit;
+}
+button {
+  background-color: inherit;
 }
 header {
   display: flex;
@@ -97,6 +108,9 @@ ul {
 /* UTILITY CLASSES */
 .grid {
   display: grid;
+  grid-template-columns: 1fr;
+}
+.grid-col--1 {
   grid-template-columns: 1fr;
 }
 .grid-col--2 {
@@ -125,11 +139,16 @@ ul {
   gap: 1.6rem;
 }
 .btn,
-.btn-menu {
+.btn-menu,
+.work-btn,
+.brand-btn,
+.inspiring-btn,
+.slider-btn {
   padding: 1.2rem;
   border: 1px solid var(--strokes);
   border-radius: var(--border-radius);
 }
+
 .btn {
   display: none;
 }
@@ -141,6 +160,10 @@ ul {
   background-color: var(--blue);
   color: var(--light-green);
   padding: 1.2rem 1.5rem;
+}
+.brand-btn {
+  background-color: var(--light-green);
+  margin: 0.6rem;
 }
 .hero {
   margin-top: 5.2rem;
@@ -252,10 +275,36 @@ ul {
   margin-bottom: 2.4rem;
   text-transform: capitalize;
 }
-.our-work {
+.titles {
   padding: 4.4rem 2.4rem;
 }
-
+.our-work > .secondary-heading {
+  margin-bottom: 4.2rem;
+}
+.headings,
+.inspiring-header {
+  display: grid;
+  gap: 1.6rem;
+}
+.work-card,
+.brand {
+  display: grid;
+  /* grid-template-rows: 1fr; */
+  gap: 4.8rem;
+  border: 1px solid var(--strokes);
+  padding: 3.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+.inspiring {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
 @media (min-aspect-ratio: 16/9) {
   .background-clip {
     width: 100%;
