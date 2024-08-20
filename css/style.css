@@ -57,7 +57,7 @@ body {
   font-weight: 400;
   color: var(--dark-green);
   background-color: var(--light-green);
-  /* overflow-x: hidden; */
+  overflow-x: clip;
 }
 a {
   color: inherit;
